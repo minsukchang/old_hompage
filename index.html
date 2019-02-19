@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<head>
+    <!-- styling-->
+    <meta charset="utf-8">
+	<link href='main.css' type='text/css' rel='stylesheet'/>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans' rel='stylesheet' type='text/css'>
+    
+    <!-- metadata-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap Core CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- more/less buttons-->
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$('.readmore').hide()
+			$('.lessbutton').hide()
+			$('.morebutton').on("click", function(event) {
+				$(this).hide();
+				$("#" + event.target.id + "_content").show()
+				$("#" + event.target.id + "_less").show()
+			});
+
+			$('.lessbutton').on("click", function(event) {
+				$(this).hide();
+				$("#" + event.target.id.split("_")[0] + "_content").hide()
+				$("#" + event.target.id.split("_")[0]).show()
+			});
+		});
+    </script>
+</head>
+
+<body>
+	<div class="container">
+        <!-- bio row -->
+		<div class="row">
+            <div class="col-md-2"> </div>
+            <div class="col-md-8 mt-10 ml-10">
+                <div class="row">
+                    <div class="col-md-4">    
+                        <span>
+                            <img id="profilepic" class="img-fluid rounded-circle mx-auto mb-1" src="me2.png" alt="Minsuk's profile picture">
+                        </span>                      
+                        <div id=social class="mx-auto">
+                            <a href="mailto: minsuk@minsukchang.com"><i class="fas fa-2x fa-envelope"></i></a> 
+                            <a href="https://scholar.google.co.uk/citations?user=1j2nBpoAAAAJ"><i class="fas fa-2x fa-graduation-cap"></i></a>
+                            <a href="https://github.com/minsukchang"><i class="fab fa-2x fa-github"></i></a>
+                            <a href="https://twitter.com/minsuk_chang"><i class="fab fa-2x fa-twitter"></i></a>
+                            <a href="https://facebook.com/minsuk.chang"><i class="fab fa-2x fa-facebook-f"></i></a>
+                            <a href="https://linkedin.com/in/minsuk"><i class="fab fa-2x fa-linkedin"></i></a>
+                        </div>
+                    </div>                   
+                    <div class="col-md-8">    
+                        <div class="myname">Minsuk Chang</div>
+                        <p class="intro">I'm a <a href="https://cs.kaist.ac.kr/">Computer Science</a> PhD student in the <a href="https://www.kixlab.org/">KIXLAB</a> at 
+                            <a href="https://www.kaist.ac.kr">KAIST</a> advised by <a href="https://juhokim.com/">Juho Kim</a>. 
+                            My work in HCI focuses on techniques for discovering, capturing, and structuring user context in large-scale web data to create novel learning
+                            opportunities in the wild. I also build interactive systems for expanding people's abilities to search, analyze and make decisions 
+                            to improve individual and collective learning experiences.
+                        </p>  
+                    </div>  
+                </div> 
+            </div>
+            <div class="col-md-2"> </div>
+        </div>
+        <!-- bio row END-->
+        
+        <!-- news row -->
+        <div class="row">
+            <div class="col-md-2"> </div>
+            <div class="col-md-8"> 
+                <div class="pub">Latest News</div>
+                <span class="date">Jan 2019 :</span><span class="news"> Will be spending the summer at Microsoft AI + Research @ Redmond. Super excited!</span><br>
+                <span class="date">Dec 2018 :</span><span class="news"> Voice interfaces for video tutorials I worked on during the summer @ Adobe has been conditionally accepted to CHI 2019. See you @ Glasgow!</span><br>
+                <span class="date">Nov 2018 :</span><span class="news"> Started winter internship at Autodesk Research @ Toronto!</span><br>
+                
+                <span class="morebutton" id="article00"> More News </span>
+                <span class="readmore" id="article00_content">
+
+                <span class="date">Oct 14-19 2018 :</span><span class="news"> Traveling to UIST 18 @ Berlin. SV'ing again!</span> <br>
+                <span class="date">Aug 22 2018 :</span><span class="news"> Visiting University of British Columbia to give a talk on voice+video interfaces. </span><br>
+                <span class="date">Jun 2018 :</span><span class="news"> Started research internship at Adobe Research @ Seattle! Seattle people, let's meet!. </span><br>
+                <span class="date">Apr 2018 :</span><span class="news"> at CHI 2018 in Montreal, Quebec! Presenting RecipeScape on thursday morning. </span><br>
+                <span class="date">Apr 2018 :</span><span class="news"> Will present RecipeScape at SIGCHI Korea Local Chapter 2018 Spring Academic Workshop </span><br>
+                <span class="date">Mar 2018 :</span><span class="news"> Invited to CHI 2018 Sensemaking Workshop :) </span><br>
+                <span class="date">Mar 2018 :</span><span class="news"> Excited to spend the summer at Adobe Research @ Seattle!  </span><br>
+                <span class="date">Feb 2018 :</span><span class="news"> Presented a poster on RecipeScape at HCI@KAIST Winter Workshop. Received best poster award! </span><br>
+                <span class="date">Dec 2017 :</span><span class="news"> Our RecipeScape paper is conditionally accepted to CHI 2018! </span><br>
+                <span class="date">Oct 22 - 24, 2017 :</span><span class="news"> Student Volunteering for UIST 2017 @ Quebec City, QC, Canada </span><br>
+                <span class="date">May 06 - 11, 2017 :</span><span class="news">Student volunteering for CHI 2017 @ Denver, CO, USA </span><br>
+                <span class="date"> Feb 2017</span><span class="news"> Our LBW paper on large scale recipe mining as been accepted to CHI 2017!</span><br>
+               
+                </span>
+                <span class="lessbutton" id="article00_less"> Less News </span>
+
+            </div>
+            <div class="col-md-2"> </div>
+        </div>
+        <!-- news row end-->
+        
+        
+        <!-- pubs row -->
+		<div id="fullpaper" class="row">
+            
+		    <div class="col-md-2"> </div>
+            <div class="col-md-8">
+                <div class="pub">Conference Papers</div>
+                <!-- publication template 
+                    <div class="eachpub">
+                        <div class="meta">
+                            <div class="conference"> </div>
+                            <div class="title"> </div>
+                            <div class="authors"> <b>Minsuk Chang</b> </div>
+                        </div>
+                        <div class="abstract">
+                            
+                            <span class="morebutton" id="article2"> Read More </span>
+                            <span class="readmore" id="article2_content">
+                            
+                        
+                            </span> 
+                            <span class="lessbutton" id="article2_less"> Read Less </span>
+                        </div>
+                        <div class="links"> <a target="_blank" href=""> website </a>  &middot; <a target="_blank" href=""> pdf </a>
+                        </div>
+                    </div>
+                -->
+                <div class="eachpub">
+                    <div class="meta">
+                        <div class="conference"> CHI 2019 </div>
+                        <div class="title"> How to Design Voice Based Navigation for How-To Videos</div>
+                        <div class="authors"> <b> Minsuk Chang</b>, Ahn Truong, Oliver Wang, Maneesh Agrawala, Juho Kim  </div>
+                    </div>
+                    <div class="abstract">
+                        <!-- what to show first -->
+                        When watching how-to videos related to physical tasks, users’ hands are often occupied by the task, making voice input a natural fit. 
+                        To better understand the design space of voice interactions for how-to video navigation, we conducted three think-aloud studies using: 
+                        1) a traditional video interface, 2) a research probe providing a voice controlled video interface, and 3) a wizard-of-oz interface. 
+                        <span class="morebutton" id="article3"> Read More </span>
+                        <span class="readmore" id="article3_content">
+                        <!-- rest of what to show on "more" -->
+                        From the studies, we distill seven navigation objectives and their underlying intents: 
+                        pace control pause, content alignment pause, video control pause, reference jump, replay jump, skip jump, and peek jump. 
+                        Our analysis found that users’ navigation objectives and intents affect the choice of referent type and referencing approach in command utterances. 
+                        Based on our findings, we recommend to 1) support conversational strategies like sequence expansions and command queues, 
+                        2) allow users to identify and refine their navigation objectives explicitly, and 3) support the seven interaction intents.</span> 
+                        <span class="lessbutton" id="article3_less"> Read Less </span>
+                    </div>
+                    <div class="links"> <a target="_blank" href=""> website </a>  &middot; <a target="_blank" href="https://kixlab.github.io/website-files/2019/chi2019-VoiceVideoNavigation-paper.pdf"> pdf </a>
+                    </div>
+                </div>
+                
+            
+                <div class="eachpub">
+                    <div class="meta">
+                        <div class="conference"> CHI 2018 </div>
+                        <div class="title"> RecipeScape: An Interactive Tool for Analyzing Cooking Instructions at Scale </div>
+                        <div class="authors"> <b> Minsuk Chang</b>, Leonore V. Guillain, Hyeungshik Jung, Vivian M. Hare, Juho Kim, and Maneesh Agrawala </div>
+                    </div>
+
+                    <div class="abstract">
+                        <!-- what to show first -->
+                        For cooking professionals and culinary students, understanding cooking instructions is an essential yet demanding task. 
+                        Common tasks include categorizing different approaches to cooking a dish and identifying usage patterns of particular ingredients or cooking methods, 
+                        all of which require extensive browsing and comparison. However, no existing system provides support for such in-depth and at-scale analysis.
+                        <span class="morebutton" id="article2"> Read More </span>
+                        <span class="readmore" id="article2_content">
+                        <!-- rest of what to show on "more" -->
+                        We present RecipeScape, an interactive system for browsing and analyzing the hundreds of recipes of a single dish available online. 
+                        We also introduce a computational pipeline that extracts cooking processes from recipe text and calculates a procedural similarity between them.
+                        To evaluate how RecipeScape supports culinary analysis at scale, 
+                        we conducted a user study with cooking professionals and culinary students with 500 recipes for two different dishes. 
+                        Results show that RecipeScape clusters recipes into distinct approaches, and captures notable usage patterns of ingredients and cooking actions.
+                        </span> 
+                        <span class="lessbutton" id="article2_less"> Read Less </span>
+                    </div>
+                    <div class="links"> <a target="_blank" href="https://recipescape.kixlab.org/"> website </a>  &middot; <a target="_blank" href="https://recipescape.kixlab.org/RecipeScape_CHI_2018__Camera_Ready_.pdf"> pdf </a>
+                    </div>
+                </div>
+		    </div>  <!-- right col md 8 end -->
+		  
+		    <div class="col-md-2"> </div>
+        </div>
+        <!-- pubs row end-->
+        
+        <!-- LBW row -->
+        <div id="posters" class="row">
+            
+            <div class="col-md-2"> </div>
+            <div class="col-md-8"> 
+                <div class="pub">Late-breaking Work, Posters, Demos, Workshop Papers</div>
+                <!-- publication template 
+                    <div class="eachpub">
+                        <div class="meta">
+                            <div class="conference"> </div>
+                            <div class="title"> </div>
+                            <div class="authors"> <b>Minsuk Chang</b> </div>
+                        </div>
+                        <div class="abstract">
+                            
+                            <span class="morebutton" id="article2"> Read More </span>
+                            <span class="readmore" id="article2_content">
+                            
+                        
+                            </span> 
+                            <span class="lessbutton" id="article2_less"> Read Less </span>
+                        </div>
+                        <div class="links"> <a target="_blank" href=""> website </a>  &middot; <a target="_blank" href=""> pdf </a>
+                        </div>
+                    </div>
+                -->
+                <div class="eachpub">
+                    <div class="meta">
+                        <div class="conference"> CHI 2019 LBW </div>
+                        <div class="title"> SolveDeep: A System for Supporting Subgoal Learning in Online Math Problem Solving </div>
+                        <div class="authors">  Hyoungwook Jin, <b>Minsuk Chang</b>, Juho Kim </div>
+                    </div>
+                    <div class="abstract">
+                        <!-- what to show first -->
+                        Learner-driven subgoal labeling helps learners form a hierarchical structure of solutions with subgoals, 
+                        which are conceptual units of procedural problem solving.
+                        While learning with such hierarchical structure of a solution in mind is effective in learning problem solving strategies, 
+                        the development of an interactive feedback system to support subgoal labeling tasks at scale requires significant expert efforts,
+                        making learner-driven subgoal labeling difficult to be applied in online learning environments. We propose SolveDeep, 
+                        a system that provides feedback on learner solutions with peer-generated subgoals. 
+                        <span class="morebutton" id="article4"> Read More </span>
+                        <span class="readmore" id="article4_content">
+                        <!-- rest of what to show on "more" -->
+                        SolveDeep utilizes a learnersourcing workflow to generate the hierarchical representation of possible solutions, 
+                        and uses a graph-alignment algorithm to generate a solution graph by merging the populated solution structures, 
+                        which are then used to generate feedback on future learners' solutions. 
+                        We conducted a user study with 7 participants to evaluate the efficacy of our system. 
+                        Participants did subgoal learning with two math problems and rated the usefulness of system feedback. 
+                        The average rating was 4.86 out of 7 (1: Not useful, 7: Useful), 
+                        and the system could successfully construct a hierarchical structure of solutions with learnersourced subgoal labels.
+                        </span> 
+                        <span class="lessbutton" id="article4_less"> Read Less </span>
+                    </div>
+                    <div class="links"> <a target="_blank" href=""> website </a>  &middot; <a target="_blank" href=""> pdf </a></div>
+                </div>
+                    
+                <div class="eachpub">
+                    <div class="meta">
+                        <div class="conference"> CHI 2018 Sensemaking Workshop</div>
+                        <div class="title"> Sensemaking around How-to-cook Videos</div>
+                        <div class="authors"> <b>Minsuk Chang</b>, Seayeon Lee, Kyungje Jo, Juho Kim </div>
+                    </div>
+                    <div class="abstract">
+                        We conducted a series of exploratory studies on sensemaking behaviors people exhibit while watching how-to-cook
+                        videos. The three different scenarios we examined are a) when people seek for alternatives in ingredients, tools and
+                        actions, b) when people seek for explanations or more detail on certain instructions, and c) when people use text
+                        search and when people use video when learning how to cook a dish. 
+                        <span class="morebutton" id="article0"> Read More </span>
+                        <span class="readmore" id="article0_content">
+                        We found a) people often make arbitrary decisions on substituting ingredients, cooking tools, or cooking
+                        actions while following instructions, b) people satisfice by verifying knowledge with little data and not wanting to deviate
+                        from the initially chosen video, and c) people use text search for definitions and confirmation of substitutions while
+                        they use video search for explanations and precise details for instruction steps
+                        </span> 
+                        <span class="lessbutton" id="article0_less"> Read Less </span>
+                    </div>
+                    <div class="links"> <a target="_blank" href="https://sensemakingchi2018.com/"> website </a>  &middot; <a target="_blank" href=""> pdf </a>
+                    </div>
+                </div>
+
+                <div class="eachpub">
+                        <div class="meta">
+                            <div class="conference"> CHI 2017 LBW </div>
+                            <div class="title">RecipeScape: Mining and Analyzing Diverse Processes in Cooking Recipes</div>
+                            <div class="authors"> <b>Minsuk Chang</b>, Vivian M. Hare, Juho Kim, Maneesh Agrawala </div>
+                        </div>
+                        <div class="abstract">
+                            In culture analytics, it is important to ask fundamental questions that address salient characteristics of collective human behavior. 
+                            This paper explores how analyzing cooking recipes in aggregate and at scale identifies these characteristics in the cooking culture, and answer
+                            fundamental questions like ”what makes a chocolate chip cookie a chocolate chip cookie?”.                             
+                            <span class="morebutton" id="article1"> Read More </span>
+                            <span class="readmore" id="article1_content">
+                            Aspiring cooks, professional chefs and cooking hobbyists share their recipes online resulting in thousands of different procedural instructions towards a shared goal. However, existing approaches
+                            focus merely on analysis at the ingredient level, for example, extracting ingredient information from individual
+                            recipes. We introduce RecipeScape, a prototype interface which supports visually querying, browsing and comparing cooking recipes at scale. We also present the underlying
+                            computational pipeline of RecipeScape that scrapes recipes online, extracts their ingredient and instruction information, constructs a graphical representation, and computes similarity between pairs of recipes.
+                            </span> 
+                            <span class="lessbutton" id="article1_less"> Read Less </span>
+                        </div>
+                        <div class="links"> <a target="_blank" href=""> website </a>  &middot; <a target="_blank" href=""> pdf </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-2"> </div>
+        </div>
+        <!-- news row end-->
+
+
+        <!-- TMI row -->
+        <div class="row">
+            
+            <div class="col-md-2"></div>
+            <div class="col-md-8"> 
+                <div class="pub">The TMI Section </div>        
+
+                <div>
+                    <strong>My research interests in more detail: </strong>
+                    <button type="button" class="btn btn-link toggle-tex" data-toggle="collapse" data-target="#whatido">
+                    <span class="glyphicon glyphicon-collapse-down"></span> Open</button>
+                </div>
+
+                <div id="whatido" class="collapse">
+                        <p>I develop interaction techniques for <span class="emph">mining context in large-scale web data</span> to create/support learning opportunities in the wild. 
+                            I study <span class="emph">computational representations</span> to structure the collective contexts mined, based on which I <span class="emph">build interfaces</span> 
+                            for expanding people's abilities to search, analyze and make decisions to improve individual and collective learning experiences.</p>
+    
+                        <p>I'm interested in the interaction bounds of interfaces, and the resulting strategic decisions users are forced to make. For example, I've looked at
+                            <ul>
+                                <li>users having to go back and forth between search results of thousand items and individual page of one specific item.</li>
+                                <li>users deciding whether to get the task done as fast as possible or invest time to learn how to do the task better.</li>
+                                <li>users having to use hands for both controlling the video tutorial and the task at hand.</li>
+                            </ul>
+                        </p>
+    
+                        <p>I build alternative systems to these computationally bounded interfaces by using techniques from interaction design, human computation, and machine learning. 
+                            At the same time, I aim to leverage these situations to learn about <span class="emph">diverse explanations, reasonings, relationships between the choices users make</span> with a vision that they will not only expand what people can learn but also expand what machines can learn.</p>
+    
+                        <p>I also spend a lot of my time thinking about ways we can improve learning at scale (i.e. MOOC) with peer learning and with interactions that leverage peer dynamics.</p>
+    
+                        <p>I taught lab sessions for the mandatory Introduction to Programming course from 2015-2018 as a Head TA. 
+                        I enjoyed working with 40 TAs and interacting with 450-500 students each semester.</p>
+                </div>
+                <p>
+                </p> 
+                <div><strong> How I got here:</strong><button type="button" class="btn btn-link toggle-tex" data-toggle="collapse" data-target="#cv"><span class="glyphicon glyphicon-collapse-down"></span> Open </button></div>
+                <div id="cv" class="collapse">
+                <p>I studied Computer Science, Financial Engineering from KAIST, Finance from Simon Business School @ University of Rochester, and Statistics
+                    from Rutgers University. I have worked at an Hedge Fund in NYC trying to beat the market by relentlessly crunching numbers prior to coming (back) to KAIST.
+                    I've spent two years in the reinforcement learning (as a subfield of machine learning) research group at KAIST as a Ph.D student before joining KIXLAB (the KAIST Interaction Lab).
+                    <a href="static/CV_minsukchang_2018_USLetter.pdf"> Here's my CV (pdf).</a>
+                </p>
+                </div>
+                
+                    
+
+
+
+
+            </div>
+            <div class="col-md-2"> </div>
+        </div>
+	</div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- Include Google Analytics Here-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+        ga('create', 'UA-77549813-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
+

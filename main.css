@@ -1,0 +1,117 @@
+
+/* Overall font*/
+
+body {
+	font-family: 'Open Sans', sans-serif!important;
+	font-weight: 200;
+}
+
+.intro {
+	font-size: 13pt;
+	font-weight: 100;
+}
+/* link info */
+a:link {
+	color:#1487C8 !important; 
+	text-decoration: none !important; 
+	}      /* unvisited link */
+a:visited {
+	color:#1487C8 !important; 
+	text-decoration: none !important; 
+	}  /* visited link */
+a:hover {
+	color:#5FBEEB !important; 
+	text-decoration: none !important; 
+	}  /* mouse over link */
+a:active {
+	color:#1487C8 !important; 
+	text-decoration: none !important; 
+	}  /* selected link */
+
+.container {
+	padding: 20px;
+}
+
+#profilepic {
+	width:200px;
+	height:200px;
+    padding: 10px;
+}
+
+#social {
+	margin-top:4px;
+	font-size: 10pt;
+    cursor: pointer;
+    cursor: hand;
+    word-spacing: 5px;
+}
+
+.myname {
+	font-family: 'Noto Sans', sans-serif;
+	font-size:40px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.pub {
+	font-family: 'Noto Sans', sans-serif;
+	font-size:20px;
+    color: #1487C8;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.emph {
+    color: #1487C8;
+    font-weight: bold;    
+}
+
+.date {
+    font-size: 11pt;
+	font-weight: bold;
+}
+.news{
+	color: #000000;
+	font-size: 11pt;
+}
+
+.conference {
+    border-top: 1px solid #004191;
+    border-bottom: 1px solid #004191;
+    display:inline;
+    text-align: center;
+   	font-weight: bold;
+	float: left;
+}
+
+.title {
+	font-size: 12pt;
+	font-weight: 700;
+	clear: left;
+}
+
+.authors{
+	font-style: italic;
+	color: #000000;
+	font-size: 11pt;
+}
+
+.abstract, .links, .keywords{
+	font-size: 11pt;
+	font-weight: 100;
+}
+
+.morebutton, .lessbutton {
+	border-bottom: 1px dotted #004191;
+	/*border-style: */
+	font-style: italic;
+	color: #004191;
+	font-size: 9pt;
+	font-weight: bold;
+	cursor: pointer; cursor: hand;
+}
+
+.eachpub{
+	margin-bottom: 30px;
+}
