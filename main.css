@@ -82,7 +82,6 @@ a:active {
     display:inline;
     text-align: center;
    	font-weight: bold;
-	float: left;
 }
 
 .title {
@@ -114,4 +113,8 @@ a:active {
 
 .eachpub{
 	margin-bottom: 30px;
+}
+
+.conference{
+	float: left;
 }
