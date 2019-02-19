@@ -14,24 +14,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-    <!-- more/less buttons-->
-	<script type="text/javascript">
-		$( document ).ready(function() {
-			$('.readmore').hide()
-			$('.lessbutton').hide()
-			$('.morebutton').on("click", function(event) {
-				$(this).hide();
-				$("#" + event.target.id + "_content").show()
-				$("#" + event.target.id + "_less").show()
-			});
-
-			$('.lessbutton').on("click", function(event) {
-				$(this).hide();
-				$("#" + event.target.id.split("_")[0] + "_content").hide()
-				$("#" + event.target.id.split("_")[0]).show()
-			});
-		});
-    </script>
 </head>
 
 <body>
@@ -61,14 +43,15 @@
                 <p>I taught lab sessions for the mandatory Introduction to Programming course from 2015-2018 as a Head TA. 
                 I enjoyed working with 40 TAs and interacting with 450-500 students each semester.</p>
                 
-                
+                <div>
+                <p>Bio:</p>
                 <p>
                 I studied Computer Science, Financial Engineering from KAIST, Finance from Simon Business School @ University of Rochester, and Statistics
                 from Rutgers University. I have worked at an Hedge Fund in NYC trying to beat the market by relentlessly crunching numbers prior to coming (back) to KAIST.
                 I've spent two years in the reinforcement learning (as a subfield of machine learning) research group at KAIST as a Ph.D student before joining KIXLAB (the KAIST Interaction Lab).
-                <a href="files/CV_minsukchang_2018_USLetter.pdf"> Here's my CV (pdf).</a>
-                
+                <a href="files/CV_minsukchang_2018_USLetter.pdf"> Here's my CV (pdf).</a>                
                 </p>
+                </div>
                     
             </div>
             <div class="col-md-2"></div>
