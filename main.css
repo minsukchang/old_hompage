@@ -96,8 +96,9 @@ a:active {
 	font-size: 11pt;
 
 }
-.authors a.link{
+.authors a:link{
 	color: #000000;
+	text-decoration: underline;
 }
 
 .abstract, .links{
