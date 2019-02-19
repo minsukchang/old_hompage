@@ -94,6 +94,12 @@ a:active {
 	font-style: italic;
 	color: #000000;
 	font-size: 11pt;
+
+}
+.authors:link{
+	font-style: italic;
+	color: #000000;
+	font-size: 11pt;
 }
 
 .abstract, .links{
