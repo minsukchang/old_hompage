@@ -1,32 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <!-- styling-->
+    <meta charset="utf-8">
+	<link href='main.css' type='text/css' rel='stylesheet'/>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans' rel='stylesheet' type='text/css'>
+    
+    <!-- metadata-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap Core CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- more/less buttons-->
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$('.readmore').hide()
+			$('.lessbutton').hide()
+			$('.morebutton').on("click", function(event) {
+				$(this).hide();
+				$("#" + event.target.id + "_content").show()
+				$("#" + event.target.id + "_less").show()
+			});
 
+			$('.lessbutton').on("click", function(event) {
+				$(this).hide();
+				$("#" + event.target.id.split("_")[0] + "_content").hide()
+				$("#" + event.target.id.split("_")[0]).show()
+			});
+		});
+    </script>
+</head>
 
-<div class="pub">TMI page</div>
+<body>
+	<div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="pub">TMI page</div>
 
-<p>I develop interaction techniques for <span class="emph">mining context in large-scale web data</span> to create/support learning opportunities in the wild. 
-I study <span class="emph">computational representations</span> to structure the collective contexts mined, based on which I <span class="emph">build interfaces</span> 
-for expanding people's abilities to search, analyze and make decisions to improve individual and collective learning experiences.</p>
-
-<p>I'm interested in the interaction bounds of interfaces, and the resulting strategic decisions users are forced to make. For example, I've looked at
-<ul>
-    <li>users having to go back and forth between search results of thousand items and individual page of one specific item.</li>
-    <li>users deciding whether to get the task done as fast as possible or invest time to learn how to do the task better.</li>
-    <li>users having to use hands for both controlling the video tutorial and the task at hand.</li>
-</ul>
-</p>
-
-<p>I build alternative systems to these computationally bounded interfaces by using techniques from interaction design, human computation, and machine learning. 
-At the same time, I aim to leverage these situations to learn about <span class="emph">diverse explanations, reasonings, relationships between the choices users make</span> with a vision that they will not only expand what people can learn but also expand what machines can learn.</p>
-
-<p>I also spend a lot of my time thinking about ways we can improve learning at scale (i.e. MOOC) with peer learning and with interactions that leverage peer dynamics.</p>
-
-<p>I taught lab sessions for the mandatory Introduction to Programming course from 2015-2018 as a Head TA. 
-I enjoyed working with 40 TAs and interacting with 450-500 students each semester.</p>
-
-
-
-I studied Computer Science, Financial Engineering from KAIST, Finance from Simon Business School @ University of Rochester, and Statistics
-from Rutgers University. I have worked at an Hedge Fund in NYC trying to beat the market by relentlessly crunching numbers prior to coming (back) to KAIST.
-I've spent two years in the reinforcement learning (as a subfield of machine learning) research group at KAIST as a Ph.D student before joining KIXLAB (the KAIST Interaction Lab).
-<a href="files/CV_minsukchang_2018_USLetter.pdf"> Here's my CV (pdf).</a></span>
-<span class="lessbutton" id="bio_less">Less bio</span>
-</p>
+                <p>I develop interaction techniques for <span class="emph">mining context in large-scale web data</span> to create/support learning opportunities in the wild. 
+                I study <span class="emph">computational representations</span> to structure the collective contexts mined, based on which I <span class="emph">build interfaces</span> 
+                for expanding people's abilities to search, analyze and make decisions to improve individual and collective learning experiences.</p>
+                
+                <p>I'm interested in the interaction bounds of interfaces, and the resulting strategic decisions users are forced to make. For example, I've looked at
+                <ul>
+                    <li>users having to go back and forth between search results of thousand items and individual page of one specific item.</li>
+                    <li>users deciding whether to get the task done as fast as possible or invest time to learn how to do the task better.</li>
+                    <li>users having to use hands for both controlling the video tutorial and the task at hand.</li>
+                </ul>
+                </p>
+                
+                <p>I build alternative systems to these computationally bounded interfaces by using techniques from interaction design, human computation, and machine learning. 
+                At the same time, I aim to leverage these situations to learn about <span class="emph">diverse explanations, reasonings, relationships between the choices users make</span> with a vision that they will not only expand what people can learn but also expand what machines can learn.</p>
+                
+                <p>I also spend a lot of my time thinking about ways we can improve learning at scale (i.e. MOOC) with peer learning and with interactions that leverage peer dynamics.</p>
+                
+                <p>I taught lab sessions for the mandatory Introduction to Programming course from 2015-2018 as a Head TA. 
+                I enjoyed working with 40 TAs and interacting with 450-500 students each semester.</p>
+                
+                
+                <p>
+                I studied Computer Science, Financial Engineering from KAIST, Finance from Simon Business School @ University of Rochester, and Statistics
+                from Rutgers University. I have worked at an Hedge Fund in NYC trying to beat the market by relentlessly crunching numbers prior to coming (back) to KAIST.
+                I've spent two years in the reinforcement learning (as a subfield of machine learning) research group at KAIST as a Ph.D student before joining KIXLAB (the KAIST Interaction Lab).
+                <a href="files/CV_minsukchang_2018_USLetter.pdf"> Here's my CV (pdf).</a>
+                
+                </p>
+                    
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
