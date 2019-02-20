@@ -76,7 +76,7 @@ a:active {
 	font-size: 11pt;
 }
 
-.conference {
+.conference, .role {
     border-top: 1px solid #1487C8;
     border-bottom: 1px solid #1487C8;;
     display:inline;
@@ -90,12 +90,19 @@ a:active {
 	clear: left;
 }
 
-.authors{
+.authors {
 	font-style: italic;
 	color: #000000;
 	font-size: 11pt;
-
 }
+
+.venue {
+	font-style: italic;
+	color: #000000;
+	font-size: 11pt;
+	clear: left;
+}
+
 
 .abstract, .links{
 	font-size: 11pt;
