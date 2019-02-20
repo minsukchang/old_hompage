@@ -76,7 +76,7 @@ a:active {
 	font-size: 11pt;
 }
 
-.conference, .role {
+.conference{
     border-top: 1px solid #1487C8;
     border-bottom: 1px solid #1487C8;;
     display:inline;
