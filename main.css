@@ -12,19 +12,19 @@ body {
 }
 /* link info */
 a:link {
-	color:#1487C8 !important; 
+	color:#004191 !important; 
 	text-decoration: none !important; 
 	}      /* unvisited link */
 a:visited {
-	color:#1487C8 !important; 
+	color:#004191 !important; 
 	text-decoration: none !important; 
 	}  /* visited link */
 a:hover {
-	color:#5FBEEB !important; 
+	color:#004191 !important; 
 	text-decoration: none !important; 
 	}  /* mouse over link */
 a:active {
-	color:#1487C8 !important; 
+	color:#004191 !important; 
 	text-decoration: none !important; 
 	}  /* selected link */
 
@@ -77,8 +77,8 @@ a:active {
 }
 
 .conference {
-    border-top: 1px solid #004191;
-    border-bottom: 1px solid #004191;
+    border-top: 1px solid #1487C8;
+    border-bottom: 1px solid #1487C8;;
     display:inline;
     text-align: center;
    	font-weight: bold;
@@ -107,7 +107,7 @@ a:active {
 }
 
 .keywords{
-	color: #1487C8;
+	color:  #004191;
 	font-size: 10pt;
 }
 
