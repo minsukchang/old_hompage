@@ -94,6 +94,14 @@ a:active {
 	font-style: italic;
 	color: #000000;
 	font-size: 11pt;
+	
+}
+
+.authorminsuk {
+	font-style: italic;
+	color: #1487C8;
+	font-size: 11pt;
+	font-weight: bold;
 }
 
 .venue {
@@ -107,6 +115,11 @@ a:active {
 .abstract, .links{
 	font-size: 11pt;
 	font-weight: 100;
+}
+
+.webpdf{
+	background-color: #004191;
+	color: #FFFFFF;
 }
 
 .keywords{
