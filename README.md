@@ -1,5 +1,5 @@
 # New homepage design (2019-02-19)
-the new design was heavily influenced by other awesome academics (and their homepages), like [Juho Kim](https://juhokim.com), [Jaeyoen Lee](http://jaeyeonlee.com), [Hyeungshik Jung](https://hyeungshikjung.com/), [Yeaseul Kim](http://students.washington.edu/yeaseul1/): I pretty much stole her CSS, I hope she forgives me. 
+the new design was heavily influenced by other awesome academics (and their homepages), for example, [Yeaseul Kim](http://students.washington.edu/yeaseul1/): I pretty much stole her CSS, I hope she forgives me. 
 
 I have removed the jekyll version and migrated to a pure HTML + Javascript homepage. 
 
